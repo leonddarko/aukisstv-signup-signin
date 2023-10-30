@@ -1,0 +1,335 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  font-family: "Lato", sans-serif;
+  /* font-size: 14px; */
+  line-height: 1.5;
+  margin: 0;
+}
+html {
+  overflow-x: hidden;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 20px;
+}
+h5 {
+  font-size: 18px;
+}
+h6 {
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #080b0e;
+}
+
+/* Zoom on Hover */
+.zoom {
+  transition: ease-in-out 0.2s;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.09, 1.09);
+  /* IE 9 */
+  -webkit-transform: scale(1.09, 1.09);
+  /* Safari 3-8 */
+  transform: scale(1.09, 1.09);
+}
+
+.container {
+  position: relative;
+  background-image: url("../assets/art.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  /* height: 130vh; */
+  border-radius: 0 0 15px 15px;
+  transition: all ease 0.6s;
+}
+
+.overlay {
+  position: relative;
+  /* height: 130vh; */
+  background-image: linear-gradient(180deg, #10181ea4, #10181e);
+  /* background-color: #10181e9f; */
+  border-radius: 0 0 15px 15px;
+  transition: all ease 0.3s;
+  padding-top: 109px;
+}
+
+@media (max-width: 992px) and (min-width: 601px) {
+  .container {
+    height: 100vh;
+  }
+
+  .overlay {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+}
+
+#header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  background-color: transparent;
+}
+
+#header img {
+  width: 8%;
+}
+
+@media (max-width: 992px) and (min-width: 601px) {
+  #header img {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #header img {
+    width: 20%;
+  }
+}
+
+#header-text-container {
+  text-align: center;
+  color: #feffdf;
+  padding: 1% 2%;
+}
+
+#header-text-container h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #feffdf;
+  line-height: normal;
+}
+
+#header-text-container i {
+  color: #a68c33;
+  font-size: 9px;
+}
+
+#header-text-container span {
+  font-weight: 600;
+}
+
+#header-text-container ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+@media (max-width: 992px) and (min-width: 601px) {
+  #header-text-container {
+    padding: 1% 6%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #header-text-container {
+    padding: 1% 6%;
+  }
+  #header-text-container h1 {
+    font-size: 2rem;
+  }
+}
+
+#form-section {
+  padding: 2% 0;
+  background-color: transparent;
+  text-align: center;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  /* border: 1px solid #ccc; */
+  background-color: #f1f1f1;
+  border-radius: 50px;
+  display: inline-block;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  border-radius: 50px;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 20px;
+  transition: 0.3s;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #a68b334f;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 30px 0;
+  border-radius: 20px;
+}
+
+#signup-form {
+  text-align: start;
+  padding: 16px 16px 32px;
+  margin: auto;
+  width: 30%;
+  background-color: white;
+  border-radius: 20px;
+}
+
+@media (max-width: 992px) and (min-width: 601px) {
+  #signup-form {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #signup-form {
+    width: 90%;
+  }
+}
+
+#form-title {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 2.5px;
+  line-height: normal;
+}
+
+.an-input {
+  padding: 8px;
+  margin-bottom: 10px;
+  display: block;
+  border: none;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  width: 100%;
+  background-color: #cfa31211;
+}
+
+.a-checkbox {
+  width: 12px;
+  height: 12px;
+  margin-bottom: 20px;
+  position: relative;
+  top: 2px;
+  border: 1px solid #a68b334f;
+}
+
+.check-lable {
+  font-size: 12px;
+}
+
+.form-support-text {
+  display: block;
+  /* padding-left: 8px; */
+  color: #10181e;
+  font-size: 12px;
+  margin-bottom: 20px;
+  line-height: normal;
+}
+
+.a-button {
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  border-radius: 50px;
+  display: inline-block;
+  padding: 10px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.make-block {
+  display: block;
+  width: 100%;
+}
+
+.bgcolor-aukiss-gold {
+  background-color: #a68c33;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+footer {
+  font-size: 11px;
+  /* position: absolute;
+  bottom: -180px; */
+  width: 100%;
+  padding: 15px;
+  color: #a68c33;
+  text-align: center;
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up | Aukiss Tv</title>
+
+    <!--Embeded Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/master.css" />
+
+    <script
+      src="https://kit.fontawesome.com/dcd356c426.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="icon" type="image/x-icon" href="/assets/aukiss-favicon.png" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="overlay">
+        <div id="header-text-container">
+          <h1>Sign up and enjoy the bliss of Aukiss Tv.</h1>
+          <ul>
+            <li>
+              <i class="fas fa-check w3-tiny"></i>
+              &nbsp;
+              <span>Only a few steps ahead to watch.</span>
+            </li>
+            <li>
+              <i class="fas fa-check w3-tiny"></i>
+              &nbsp;
+              <span>Change plans at any time.</span>
+            </li>
+            <li>
+              <i class="fas fa-check w3-tiny"></i>
+              &nbsp;
+              <span>Cancel anytime You want to</span>
+            </li>
+          </ul>
+        </div>
+
+        <section id="form-section">
+          <div class="tab">
+            <button
+              class="tablinks"
+              onclick="openTab(event, 'T1')"
+              id="defaultOpen"
+            >
+              <i class="fas fa-user-plus"></i> Create account
+            </button>
+            <button class="tablinks" onclick="openTab(event, 'T2')">
+              Sign in <i class="fas fa-sign-in-alt"></i>
+            </button>
+            <!-- <button class="tablinks" onclick="openTab(event, 'T3')">Fly</button> -->
+          </div>
+          <div id="T1" class="tabcontent fade">
+            <div id="signup-form">
+              <h6 id="form-title">Fill the form below to create an account</h6>
+              <form action="#">
+                <input
+                  class="an-input"
+                  type="email"
+                  placeholder="Email address"
+                  name="email"
+                  autocomplete="off"
+                  required
+                />
+
+                <input
+                  class="an-input"
+                  type="password"
+                  placeholder="Password"
+                  name="password"
+                  autocomplete="off"
+                  required
+                />
+
+                <input class="a-checkbox" type="checkbox" id="togglepsw" />
+                &nbsp;
+                <label class="check-lable">Show password</label>
+
+                <span class="form-support-text">
+                  <i class="fas fa-info-circle"></i>
+                  Passwords should contain:&nbsp;
+                  <b>lowercase</b> letters,&nbsp;
+                  <b>uppercase</b> letters,&nbsp; at least a <b>number</b>&nbsp;
+                  & minimum <b>8 characters</b>
+                </span>
+
+                <input
+                  class="an-input"
+                  type="number"
+                  placeholder="Phone"
+                  name="phone"
+                  autocomplete="off"
+                  required
+                />
+
+                <span class="form-support-text"
+                  >By signing up, you agree to our <a href="">Terms</a> of
+                  agreement</span
+                >
+
+                <button
+                  type="submit"
+                  class="a-button make-block bgcolor-aukiss-gold"
+                >
+                  Create
+                  <i class="fas fa-user-plus"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div id="T2" class="tabcontent fade">
+            <div id="signup-form">
+              <h6 id="form-title">Welcome, Sign back in.</h6>
+              <form action="#">
+                <input
+                  class="an-input"
+                  type="email"
+                  placeholder="Email address"
+                  name="email"
+                  autocomplete="off"
+                  required
+                />
+
+                <input
+                  class="an-input"
+                  type="password"
+                  placeholder="Password"
+                  name="password"
+                  autocomplete="off"
+                  required
+                />
+
+                <input class="a-checkbox" type="checkbox" />
+                &nbsp;
+                <label class="check-lable">Show password</label>
+
+                <button
+                  type="submit"
+                  class="a-button make-block bgcolor-aukiss-gold"
+                >
+                  Sign in
+                  <i class="fas fa-user-plus"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <script>
+            function openTab(evt, tabName) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(
+                  " active",
+                  ""
+                );
+              }
+              document.getElementById(tabName).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+          </script>
+        </section>
+        <footer>
+          <span
+            >&copy; <%= new Date().getFullYear(); %> Aukiss Tv. &nbsp; All right
+            reserved.</span
+          >
+        </footer>
+      </div>
+    </div>
+
+    <div id="header">
+      <img src="assets/aukiss-logo.png" alt="" />
+    </div>
+  </body>
+</html>
